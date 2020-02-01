@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Tatiana Camelo<title>
-</head>
+<html lang="en">
+<title>Tatiana Camelo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 <body>
-  <h1>Hello World</h1>
-  <footer>t.scda 2020</footer>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#talks" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TALKS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#talks" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TALKS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+      <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">Tatiana Camelo</h2>
+    <p class="w3-opacity"><i>developer</i></p>
+    <p class="w3-justify">Enthusiast about technology, challenges, possibilities and algorithms. I believe in the power of technology development to ensure a sustainable, democratic, accessible, socially and economically fair society.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGoPAQQBcG6Fw/profile-displayphoto-shrink_200_200/0?e=1585785600&v=beta&t=jwuxmQtuLBSdf3gI8NRDzTV2Wm2I2IYXz3uQhXxiFGo" class="w3-round w3-margin-bottom" alt="Tatiana's Picture" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- Automatic Slideshow Images -->
+  <!-- <div class="mySlides w3-display-container w3-center" style="max-width:800px">
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQGJzjRarAUveg/feedshare-shrink_1280/0?e=1583366400&v=beta&t=8X1noyW8V65aT6jFsgaM8TCUnymbTbCMUMHuZnlOLf0" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Federal University of Minas Gerais - Minas Gerais - Brazil</h3>
+      <p><b>Graduation Day</b></p>   
+    </div>
+  </div> -->
+  <div class="mySlides w3-display-container w3-center" id="talks">
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQH-0KwY8rVb4A/feedshare-shrink_1280/0?e=1583366400&v=beta&t=ZmmXwkc13tDvHrncAmdltCUA0UrSste9otet8RagZ9Q" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>She's Tech 2019</h3>
+      <p><b>Talk about Impartiality in Algorithms</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" >
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQFCXej68VHuRg/feedshare-shrink_2048_1536/0?e=1583366400&v=beta&t=RfP1Pg0GZ68xc3HiOHYihwsGiM1V0cNnq7GWlZvqIjA" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Hotmart Labs</h3>
+      <p><b>Talk about development for non-developers. I presented the history of computing, the pioneering of women in the area, as is our day-to-day life and I was also able to teach a little about programming logic.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHApLLBKxUlEA/feedshare-shrink_1280/0?e=1583366400&v=beta&t=JfDoqcCEU2hN0x1TP3-8CjpEqaMZHulp_Pa1_lI0gUE" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Mind The Gap - 2019</h3>
+      <p><b>Event held by Google in partnership with the Department of Computer Science at UFMG which aims to stimulate girls' interest in the field of computing. There are two days of activities, one at Google and the other at UFMG. In this year's edition, the girls were selected at Federal Institutes across Brazil.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://media-exp1.licdn.com/dms/image/C4E22AQGvj1EBk8uRqw/feedshare-shrink_1280/0?e=1583366400&v=beta&t=YzHUop67-Nixj9qVXXQrR-PkUJAr5yk66Dz5QIK0mLA" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Mind The Gap - 2018</h3>
+      <p><b></b>Event held by Google in partnership with the Department of Computer Science at UFMG which aims to stimulate girls' interest in the field of computing. There are two days of activities, one at Google and the other at UFMG. In this year's edition, the girls were selected at Federal Institutes across Brazil.</p>    
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Talk to me!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Minas Gerais, Brazil<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> GitHub: tatiana-scda<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!-- <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-belo-horizonte-capa2019-04-820x430.jpg" class="w3-image w3-greyscale-min" style="width:50%"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/x.tatiana/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/tatianacamelo/ "> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p class="w3-medium">template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
